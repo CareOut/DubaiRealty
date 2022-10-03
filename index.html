@@ -11,8 +11,9 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="styles/main.css" />
+
     <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <header class="header">
@@ -82,26 +83,40 @@
             </div>
             <div class="welcome-slider">
               <div class="slider-arrows">
-                <div class="arrow__prev">prev</div>
+                <a href="#" class="arrow__prev">prev</a>
                 <div class="arrow__border">
                   <img src="styles/img/icons/line.svg" alt="" />
                 </div>
-                <div class="arrow__next">next</div>
+                <a href="#" class="arrow__next">next</a>
               </div>
               <div class="slider-items">
                 <div class="slider__item">
                   <div class="item__number">01</div>
-                  <div class="item__text">Lorem Ipsum Dolorem apset</div>
+                  <div class="item__info">Lorem Ipsum Dolorem apset</div>
                 </div>
                 <div class="slider__item">
                   <div class="item__number">02</div>
-                  <div class="item__text">Lorem Ipsum Dolorem apset</div>
+                  <div class="item__info">Lorem Ipsum Dolorem apset</div>
                 </div>
                 <div class="slider__item">
                   <div class="item__number">03</div>
-                  <div class="item__text">Lorem Ipsum Dolorem apset</div>
+                  <div class="item__info">Lorem Ipsum Dolorem apset</div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="slider-items items-mobile">
+            <div class="slider__item">
+              <div class="item__number">01</div>
+              <div class="item__info">Lorem Ipsum Dolorem apset</div>
+            </div>
+            <div class="slider__item">
+              <div class="item__number">02</div>
+              <div class="item__info">Lorem Ipsum Dolorem apset</div>
+            </div>
+            <div class="slider__item">
+              <div class="item__number">03</div>
+              <div class="item__info">Lorem Ipsum Dolorem apset</div>
             </div>
           </div>
         </div>
@@ -123,8 +138,8 @@
               </div>
             </div>
             <div class="projects-slider swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide slide_1">
+              <div class="projects-slider-wrapper swiper-wrapper">
+                <div class="projects__slide swiper-slide slide_1">
                   <div class="slide-info">
                     <div class="info__title">Villas</div>
                     <p class="info__text">
@@ -134,11 +149,14 @@
                     </p>
                     <a class="info__link" href="#"
                       ><p>See project</p>
-                      <img src="styles/img/icons/slide_arrow.svg" alt=""
+                      <img
+                        class="project__img"
+                        src="styles/img/icons/slide_arrow.svg"
+                        alt=""
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_2">
+                <div class="projects__slide swiper-slide slide_2">
                   <div class="slide-info">
                     <div class="info__title">Dubai</div>
                     <p class="info__text">
@@ -152,7 +170,7 @@
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_3">
+                <div class="projects__slide swiper-slide slide_3">
                   <div class="slide-info">
                     <div class="info__title">Houses</div>
                     <p class="info__text">
@@ -166,7 +184,7 @@
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_4">
+                <div class="projects__slide swiper-slide slide_4">
                   <div class="slide-info">
                     <div class="info__title">Villas</div>
                     <p class="info__text">
@@ -180,7 +198,7 @@
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_1">
+                <div class="projects__slide swiper-slide slide_1">
                   <div class="slide-info">
                     <div class="info__title">Villas</div>
                     <p class="info__text">
@@ -194,7 +212,7 @@
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_2">
+                <div class="projects__slide swiper-slide slide_2">
                   <div class="slide-info">
                     <div class="info__title">Dubai</div>
                     <p class="info__text">
@@ -208,7 +226,7 @@
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_3">
+                <div class="projects__slide swiper-slide slide_3">
                   <div class="slide-info">
                     <div class="info__title">Houses</div>
                     <p class="info__text">
@@ -222,7 +240,7 @@
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_4">
+                <div class="projects__slide swiper-slide slide_4">
                   <div class="slide-info">
                     <div class="info__title">Villas</div>
                     <p class="info__text">
@@ -236,7 +254,7 @@
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_1">
+                <div class="projects__slide swiper-slide slide_1">
                   <div class="slide-info">
                     <div class="info__title">Villas</div>
                     <p class="info__text">
@@ -250,7 +268,7 @@
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_2">
+                <div class="projects__slide swiper-slide slide_2">
                   <div class="slide-info">
                     <div class="info__title">Dubai</div>
                     <p class="info__text">
@@ -264,7 +282,7 @@
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_3">
+                <div class="projects__slide swiper-slide slide_3">
                   <div class="slide-info">
                     <div class="info__title">Houses</div>
                     <p class="info__text">
@@ -278,7 +296,7 @@
                     /></a>
                   </div>
                 </div>
-                <div class="swiper-slide slide_4">
+                <div class="projects__slide swiper-slide slide_4">
                   <div class="slide-info">
                     <div class="info__title">Villas</div>
                     <p class="info__text">
@@ -327,8 +345,8 @@
         <div class="video-body">
           <iframe
             src="https://vk.com/video_ext.php?oid=-120517385&id=456239017&hash=943bb7691dc7667b&hd=2"
-            width="1280"
-            height="480"
+            width="auto"
+            height="auto"
             allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
             frameborder="0"
             allowfullscreen
@@ -347,7 +365,11 @@
           <div class="achieve-description">
             <div class="description__left">
               <div class="description__img">
-                <img src="styles/img/main/achieve_1.png" alt="" />
+                <img
+                  class="achieve__img"
+                  src="styles/img/main/achieve_1.png"
+                  alt=""
+                />
               </div>
               <div class="description__text">
                 Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis.
@@ -367,7 +389,11 @@
             </div>
             <div class="description__right">
               <div class="description__img">
-                <img src="styles/img/main/achieve_2.png" alt="" />
+                <img
+                  class="achieve__img"
+                  src="styles/img/main/achieve_2.png"
+                  alt=""
+                />
               </div>
               <div class="description__text">
                 Vivamus non diam vel lorem efficitur mattis in gravida ante. Ut
@@ -401,10 +427,201 @@
         </div>
       </div>
     </section>
+    <section class="articles">
+      <div class="articles-wrapper">
+        <div class="articles-container">
+          <div class="articles-body">
+            <div class="articles-title">
+              <h2 class="title__title">Useful articles</h2>
+              <a class="articles__link" href="#"
+                >View all articles
+                <img src="styles/img/icons/article_arrow.svg" alt=""
+              /></a>
+            </div>
+            <div class="articles-images">
+              <div class="article__image image__first">
+                <div class="article-info">
+                  <p class="image__date">Jule 03, 2022</p>
+                  <h5 class="image__title">Discover Architecture</h5>
+                  <p class="image__text">
+                    Projects for many large domestic and foreign corporations,
+                    enterprises in many elds such
+                  </p>
+                  <a href="#" class="image__link"
+                    >Learn more
+                    <img src="styles/img/icons/image_arrow.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="article__image image__second">
+                <div class="article-info">
+                  <p class="image__date">Jule 03, 2022</p>
+                  <h5 class="image__title">Discover Architecture</h5>
+                  <p class="image__text">
+                    Projects for many large domestic and foreign corporations,
+                    enterprises in many elds such
+                  </p>
+                  <a href="#" class="image__link"
+                    >Learn more
+                    <img src="styles/img/icons/image_arrow.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="article__image image__third">
+                <div class="article-info">
+                  <p class="image__date">Jule 03, 2022</p>
+                  <h5 class="image__title">Discover Architecture</h5>
+                  <p class="image__text">
+                    Projects for many large domestic and foreign corporations,
+                    enterprises in many elds such
+                  </p>
+                  <a href="#" class="image__link"
+                    >Learn more
+                    <img src="styles/img/icons/image_arrow.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="feedback-wrapper">
+        <div class="feedback-slider swiper">
+          <div class="feedback-slider-wrapper swiper-wrapper">
+            <div class="swiper-slide feedback-slide">
+              <div class="feedback-slide__top">
+                <div class="founder__image">
+                  <img
+                    class="img__img"
+                    src="styles/img/main/founder_1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="comma__image">
+                  <img src="styles/img/main/commas.png" alt="" />
+                </div>
+              </div>
+              <h5 class="feedback__name">Paul</h5>
+              <p class="feedback__description">Owner in Paul.com</p>
+              <p class="feedback__text">
+                Projects for many large domestic and foreign corporations,
+                enterprises in many elds such as nance, banking, F&B, education,
+                communication.
+              </p>
+            </div>
+            <div class="feedback-slide swiper-slide">
+              <div class="feedback-slide__top">
+                <div class="founder__image">
+                  <img
+                    class="img__img"
+                    src="styles/img/main/founder_2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="comma__image">
+                  <img src="styles/img/main/commas.png" alt="" />
+                </div>
+              </div>
+              <h5 class="feedback__name">Robert</h5>
+              <p class="feedback__description">Founder in Apple inc.</p>
+              <p class="feedback__text">
+                Founded in 2007, Sparch is specializing in providing innovative
+                services such as website design, brand identity and marketing
+              </p>
+            </div>
+            <div class="feedback-slide swiper-slide">
+              <div class="feedback-slide__top">
+                <div class="founder__image">
+                  <img
+                    class="img__img"
+                    src="styles/img/main/founder_1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="comma__image">
+                  <img src="styles/img/main/commas.png" alt="" />
+                </div>
+              </div>
+              <h5 class="feedback__name">Paul</h5>
+              <p class="feedback__description">Owner in Paul.com</p>
+              <p class="feedback__text">
+                Projects for many large domestic and foreign corporations,
+                enterprises in many elds such as nance, banking, F&B, education,
+                communication.
+              </p>
+            </div>
+            <div class="feedback-slide swiper-slide">
+              <div class="feedback-slide__top">
+                <div class="founder__image">
+                  <img
+                    class="img__img"
+                    src="styles/img/main/founder_2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="comma__image">
+                  <img src="styles/img/main/commas.png" alt="" />
+                </div>
+              </div>
+              <h5 class="feedback__name">Robert</h5>
+              <p class="feedback__description">Founder in Apple inc.</p>
+              <p class="feedback__text">
+                Founded in 2007, Sparch is specializing in providing innovative
+                services such as website design, brand identity and marketing
+              </p>
+            </div>
+            <div class="feedback-slide swiper-slide">
+              <div class="feedback-slide__top">
+                <div class="founder__image">
+                  <img
+                    class="img__img"
+                    src="styles/img/main/founder_1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="comma__image">
+                  <img src="styles/img/main/commas.png" alt="" />
+                </div>
+              </div>
+              <h5 class="feedback__name">Paul</h5>
+              <p class="feedback__description">Owner in Paul.com</p>
+              <p class="feedback__text">
+                Projects for many large domestic and foreign corporations,
+                enterprises in many elds such as nance, banking, F&B, education,
+                communication.
+              </p>
+            </div>
+            <div class="feedback-slide swiper-slide">
+              <div class="feedback-slide__top">
+                <div class="founder__image">
+                  <img
+                    class="img__img"
+                    src="styles/img/main/founder_2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="comma__image">
+                  <img src="styles/img/main/commas.png" alt="" />
+                </div>
+              </div>
+              <h5 class="feedback__name">Robert</h5>
+              <p class="feedback__description">Founder in Apple inc.</p>
+              <p class="feedback__text">
+                Founded in 2007, Sparch is specializing in providing innovative
+                services such as website design, brand identity and marketing
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
     <section class="faq">
       <div class="container">
         <div class="faq-body">
-          <h2 class="faq__title">FAQ</h2>
+          <h2 class="title__title">FAQ</h2>
           <div class="accardeon">
             <div class="accardeon-content">
               <div class="accordeon-item">

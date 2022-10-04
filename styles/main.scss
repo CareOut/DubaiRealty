@@ -60,10 +60,6 @@ img {
   vertical-align: top;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 @font-face {
   font-family: "Gilroy";
   src: url(fonts/gilroy/Gilroy-Regular.ttf);
@@ -1086,6 +1082,7 @@ body {
 /*...................................FEEDBACK-SLIDER...........................................................*/
 
 .feedback {
+  overflow: hidden;
   background-color: #272727;
   padding: 200px 0px 80px 0px;
   @media (max-width: 1000px) {
@@ -1285,6 +1282,9 @@ body {
   color: #e8e8e8;
   padding: 35px 35px 35px 35px;
   display: none;
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
 }
 
 .show {
@@ -1313,12 +1313,30 @@ footer {
 
 .footer-logo {
   margin-bottom: 50px;
+  @media (max-width: 1000px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 480px) {
+    margin-bottom: 10px;
+  }
 }
 
 .footer-info {
   display: flex;
   justify-content: space-between;
   gap: 70px;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.footer-info-mobile {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  @media (max-width: 1000px) {
+    display: flex;
+  }
 }
 
 .column__list li {
@@ -1333,6 +1351,9 @@ footer {
   line-height: 21px;
   color: #e8e8e8;
   margin-bottom: 40px;
+  @media (max-width: 1000px) {
+    margin-bottom: 20px;
+  }
 }
 
 .column__text {
@@ -1361,18 +1382,37 @@ footer {
 
 .footer__btn {
   margin-top: 50px;
+  @media (max-width: 480px) {
+    margin-top: 10px;
+  }
 }
 
 .footer-bottom {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 30px 0px 30px 0px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 }
 
 .bottom-right {
   display: flex;
   gap: 25px;
   align-items: center;
+
+  @media (max-width: 480px) {
+    order: 1;
+  }
+}
+
+.bottom-left {
+  @media (max-width: 480px) {
+    order: 2;
+  }
 }
 
 .footer__text {
@@ -1382,4 +1422,92 @@ footer {
   font-size: 18px;
   line-height: 160%;
   color: #e8e8e8;
+}
+
+.footer-accardeon {
+  margin-bottom: 15px;
+}
+
+.footer-column {
+  padding-left: 10px;
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.column__right {
+  display: flex;
+  align-items: flex-end;
+  @media (max-width: 480px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*................................................BURGER.......................................................*/
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: #272727;
+}
+
+.burger-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px 30px 20px;
+}
+
+.burger__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger__list a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #ffffff;
+  @media (max-width: 480px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.burger__select {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  border: none;
+  @media (max-width: 480px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.burger__select:hover {
+  color: #fcd54c;
 }

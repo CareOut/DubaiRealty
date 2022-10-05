@@ -1,3 +1,5 @@
+// accordeon in section FAQ
+
 const title = document.querySelectorAll(".accordeon-title");
 
 title.forEach((el) => {
@@ -12,6 +14,19 @@ title.forEach((el) => {
     }
   });
 });
+
+// accordeon in mobile footer
+
+const footerTitle = document.querySelectorAll(".footer-accordeon-title");
+
+footerTitle.forEach((el) => {
+  el.addEventListener("click", () => {
+    el.nextElementSibling.classList.toggle("show");
+    el.querySelector(".acc__img").classList.toggle("rotate");
+  });
+});
+
+// slider in section Projects
 
 const swiper = new Swiper(".projects-slider", {
   loop: true,
@@ -28,15 +43,15 @@ const swiper = new Swiper(".projects-slider", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 10,
-      slidesPerGroup: 4,
+      slidesPerGroup: 2,
       slidesPerColumn: 2,
     },
     480: {
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 10,
-      slidesPerGroup: 4,
+      slidesPerGroup: 2,
       slidesPerColumn: 2,
     },
     800: {
@@ -51,6 +66,8 @@ const swiper = new Swiper(".projects-slider", {
     },
   },
 });
+
+// slider in section Feedback
 
 const slider = new Swiper(".feedback-slider", {
   loop: true,
@@ -90,6 +107,8 @@ const slider = new Swiper(".feedback-slider", {
   },
 });
 
+// menu Burger
+
 const burgerSelect = document.querySelector(".burger__select");
 const burgerSelectMenu = document.querySelector(".burger-select-menu");
 
@@ -108,4 +127,22 @@ burgerIcon.addEventListener("click", () => {
 
 burgerCross.addEventListener("click", () => {
   burgerMenu.style.display = "none";
+});
+
+// modal
+
+const buttonConsultation = document.querySelectorAll(".consultation");
+const modal = document.querySelector(".modal");
+const modalCross = document.querySelector(".cross__image");
+
+buttonConsultation.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault;
+    modal.style.display = "block";
+    window.scrollTo(pageYOffset, 0);
+  });
+});
+
+modalCross.addEventListener("click", () => {
+  modal.style.display = "none";
 });

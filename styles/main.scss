@@ -964,6 +964,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   @media (max-width: 480px) {
     flex-direction: column;
     gap: 15px;
@@ -1309,6 +1310,9 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding: 70px 0px 95px 0px;
+  @media (max-width: 480px) {
+    padding: 40px 0px 30px 0px;
+  }
 }
 
 .footer-logo {
@@ -1449,6 +1453,17 @@ footer {
   }
 }
 
+.footer-accordeon-title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
 /*................................................BURGER.......................................................*/
 
 .burger {
@@ -1456,7 +1471,7 @@ footer {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: #272727;
   display: none;
 }
@@ -1467,17 +1482,22 @@ footer {
   flex-direction: column;
 }
 
+.burger-navbar {
+  width: 100%;
+}
+
 .burger-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px 30px 20px;
+  padding: 50px 20px 30px 10px;
 }
 
 .burger__list {
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
 }
 
 .burger__list a {
@@ -1503,10 +1523,11 @@ footer {
   font-size: 36px;
   line-height: 44px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: none;
   color: #e8e8e8;
   cursor: pointer;
+  padding-left: 30px;
   @media (max-width: 480px) {
     font-size: 36px;
     line-height: 44px;
@@ -1546,4 +1567,134 @@ footer {
 
 .yellow {
   color: #fcd54c;
+}
+
+.burger-bottom {
+  width: 100%;
+  display: none;
+  padding: 50px 0px 0px 0px;
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.burger__line {
+  width: 100%;
+  border: 1px solid #fcd54c;
+  margin-bottom: 40px;
+}
+
+.burger__phone {
+  @media (max-width: 480px) {
+    margin: 40px 0px;
+  }
+}
+
+/*............................................MODAL.......................................................*/
+
+.modal {
+  position: absolute;
+  background-color: rgba(39, 39, 39, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.modal-body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 67px 70px 44px 70px;
+  background-color: #ffffff;
+  @media (max-width: 1000px) {
+    padding: 37px 35px 22px 35px;
+  }
+  @media (max-width: 480px) {
+    padding: 20px 20px 15px 20px;
+  }
+}
+
+.modal-content input {
+  display: block;
+  width: 450px;
+  height: 35px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #929292;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.modal__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #000000;
+  @media (max-width: 480px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.modal__text {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  margin: 10px 0px 50px 0px;
+  @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 10px 0px 20px 0px;
+  }
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__button {
+  margin: 56px 0px 0px 0px;
+  @media (max-width: 480px) {
+    margin: 20px 0px 0px 0px;
+  }
+}
+
+.modal__cross {
+  position: absolute;
+  top: -26px;
+  right: -70px;
+  @media (max-width: 480px) {
+    top: -16px;
+    right: -35px;
+  }
+}
+
+.cross__image {
+  cursor: pointer;
 }
